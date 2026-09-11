@@ -1,0 +1,329 @@
+/* =========================
+   Global
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+
+/* =========================
+   Main App
+========================= */
+
+.app {
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   URL Form
+========================= */
+
+form {
+    display: flex;
+    gap: 12px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+form input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+form input:disabled {
+    background: #f3f4f6;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   Error
+========================= */
+
+.error {
+    margin-top: 15px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+
+/* =========================
+   Generated URL
+========================= */
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-radius: 12px;
+}
+
+.result p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #065f46;
+}
+
+.result a {
+    display: inline-block;
+    margin-right: 12px;
+    color: #047857;
+    font-weight: 600;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.result a:hover {
+    text-decoration: underline;
+}
+
+.result button {
+    background: #059669;
+}
+
+.result button:hover {
+    background: #047857;
+}
+
+
+/* =========================
+   History
+========================= */
+
+.history {
+    margin-top: 40px;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.history-header h2 {
+    font-size: 26px;
+    color: #111827;
+}
+
+.history-header button {
+    background: #6b7280;
+}
+
+.history-header button:hover {
+    background: #4b5563;
+}
+
+
+/* =========================
+   Empty History
+========================= */
+
+.history > p {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    color: #6b7280;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   URL List
+========================= */
+
+.url-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* =========================
+   URL Card
+========================= */
+
+.url-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.url-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
+}
+
+.url-card p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.url-card p:last-child {
+    margin-bottom: 0;
+}
+
+.url-card strong {
+    color: #374151;
+    margin-right: 5px;
+}
+
+
+/* =========================
+   History Links
+========================= */
+
+.url-card a {
+    color: #2563eb;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.url-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 650px) {
+
+    .app {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    form {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .history-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .history-header h2 {
+        font-size: 22px;
+    }
+
+    .history-header button {
+        padding: 10px 14px;
+    }
+
+    .result {
+        padding: 15px;
+    }
+
+    .result a {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .url-card {
+        padding: 15px;
+    }
+}
