@@ -13,7 +13,7 @@
 13. Analytics
 14. React Router
 15. Component architecture
-16. Authentication
+16. Authentication         working
 17. User-specific URLs
 18. Dashboard
 19. Middleware
