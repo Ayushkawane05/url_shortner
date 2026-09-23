@@ -1,0 +1,26 @@
+1.  POST /url                 ✅
+2.  GET /url/:id              ✅
+3.  GET /getall               ✅
+4.  Redirect                   ✅
+5.  PUT /url/:id               done
+6.  DELETE /url/:id
+7.  Frontend                   done
+8.  Search
+9.  Pagination                  done
+10. Sorting                     done
+11. Custom short URL            done
+12. URL expiration
+13. Analytics
+14. React Router
+15. Component architecture
+16. Authentication
+17. User-specific URLs
+18. Dashboard
+19. Middleware
+20. Validation
+21. Error handling
+22. Rate limiting
+23. Redis caching
+24. Background jobs
+25. Testing
+26. Deployment
