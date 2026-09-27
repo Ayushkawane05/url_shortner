@@ -19,8 +19,8 @@
 19. Middleware
 20. Validation
 21. Error handling
-22. Rate limiting
-23. Redis caching
+22. Rate limiting.         exp
+23. Redis caching.         exp
 24. Background jobs
 25. Testing
 26. Deployment
